@@ -140,8 +140,41 @@
 
 
 <script>
+import $ from 'jquery'
+//import 'isotope-layout/dist/isotope.pkgd.min.js'
+import Isotope from 'isotope-layout'
 
+export default {
+    create() {
+
+    },
+    data() {
+        return {
+            isotope: null,
+        }
+    },
+    methods: {
+        // Init Isotope
+        initIsotope() {
+            this.isotope = new Isotope('.class-container', {
+                itemSelector: '.class-item',
+                layoutMode: 'fitRows'
+            });
+            console.dir(this.isotope);
+        },
+    },
+    mounted() {
+        this.initIsotope()
+    },
+    beforeUnmount() {
+        if (this.isotope) {
+            this.isotope = null;
+        }
+    },
+}
 
 </script>
 
-<style></style>
+<style>
+
+</style>

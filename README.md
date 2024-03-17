@@ -44,10 +44,10 @@ easing
 wow 
 
 ### 排版
-isotope 3
+isotope
 
 ### 輪播
 owlcarousel 
 
 ### 燈箱
-lightbox2 
+lightbox2  

@@ -21,6 +21,7 @@ export default {
         }
     },
     mounted() {
+        //new this.$wow.WOW().init();
     },
     methods: {
 

@@ -1,24 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from "./router";
-import $ from 'jquery';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap'
-
-//import 'owl.carousel/dist/assets/owl.carousel.css';
-//import 'owl.carousel';
-
-
-//window.$ = $;
-//import animated from "animate.css"
-//import Isotope from 'isotope-layout'
-//import WOW from 'wow.js'
-
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@flaticon/flaticon-uicons/css/all/all.css'
 
 
 import "./assets/style/all.css"
+import "./assets/js/main.js"
+
 
 //切換頁面回到頂部
 router.afterEach((to, from, next) => {
